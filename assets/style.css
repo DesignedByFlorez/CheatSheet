@@ -1,0 +1,123 @@
+:root {
+        --primary: blueviolet;
+}
+
+*{
+    background-color: black;
+    color: aliceblue;
+    box-sizing: border-box;
+}
+::selection {
+    background-color: greenyellow;
+    color: black;
+}
+
+header {
+    background: linear-gradient( var(--primary) , black );
+    text-align: center;
+    text-align: center;
+}
+
+h1 {
+    background-color: transparent;
+    color: black;
+    font-size: 200%;
+    font-weight: 900;
+    font-family: impact;
+    padding-top: 10px;
+}
+
+h2 { 
+    border: white 3px solid;
+    border-radius: 10px;
+    font-size: 200%;
+    color: blueviolet;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: white 3px dashed;
+    width: 25%;
+    margin: 2%;
+    padding: 1%;
+}
+
+section:hover, section:hover h2 {
+    box-shadow: 0 0 15px inset greenyellow, 0 0 15px greenyellow;
+}
+
+p {
+    background-color: transparent;
+    color: rgb(122, 121, 121);
+    font-size: large;
+    margin: 15PX;
+}
+
+header>p {
+
+    font-weight: 600;
+}
+
+code {
+    background-color: transparent;
+    user-select: all;
+}
+
+pre {
+    flex-grow: 1;
+    background: linear-gradient(var(--primary),rgb(75, 74, 74));
+    padding: 2%;
+    text-align: left;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#header2 {
+    margin-top: 10px;
+    background: linear-gradient(black,var(--primary));
+    padding-top: 30px;
+}
+
+#p2 {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background: linear-gradient(var(--primary),black);
+}
+
+footer {
+    margin: 15px;
+}
+
+ul {
+    text-align: right;
+}
+
+
+@media screen and (max-width:992px){
+    section {
+        width: 45%;
+        transition: all 1.5 ease-in-out;
+    }
+}
+
+@media screen and (max-width:768px){
+    header {
+        margin-bottom: 20px;
+    }
+    section {
+        width: 95%;
+        transition: all 1.5 ease-in-out;
+        margin: 4%;
+    }
+}
